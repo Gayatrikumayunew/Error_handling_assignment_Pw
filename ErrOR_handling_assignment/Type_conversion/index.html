@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let str = "12bmnm3"
+        // function convertToNumber(str) {
+        //     let ans = !isNaN(str)
+        //     if (ans) {
+        //         console.log("valid")
+        //     }
+        //     else {
+        //         console.log("invalid")
+        //     }
+        // }
+        convertToNumber(str)
+        function convertToNumber(str){
+
+
+        try{
+            let num=Number(str)
+            if(isNaN(num)){
+                throw new Error ("not a number")
+            }
+            console.log("Successfully converted tp a number")
+        }
+        catch(error){
+            console.log("error")
+        }}
+    </script>
+</body>
+
+</html>
