@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const aarr=[1,2,3,4,5]
+        function checknum(arr){
+            return function(num){
+                return arr.includes(num)
+            }
+        }
+        const ans=checknum(aarr)
+        console.log(ans(22))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

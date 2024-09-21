@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var products=[{name:"shirt" ,category: "clothing"},{
+            name:"toys",category:"plastic"
+        },{name:"froke",category:"clothing"},{name:"tshirt" , category:"clothing"}]
+        function arrofproducts(products,category){
+            return products.filter(function(product){
+                return product.category===category
+            })}
+            var ans=arrofproducts(products,"clothing")
+            console.log(ans)
+    </script>
+</body>
+</html>

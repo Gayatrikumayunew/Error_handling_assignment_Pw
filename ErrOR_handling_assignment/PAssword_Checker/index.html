@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class User {
+
+            setpass(a){
+              if(/\d/.test(a)&& a.length>=8){
+                let output = "";
+                for (let i = 0; i < a.length; i++) {
+                    output += "*";
+                }
+                console.log(output)
+            
+              }else{
+                console.log("Invalid string must conatin 8 char and digit")
+              }
+            }
+        }
+
+        const user = new User();
+        user.setpass("hello125")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getPerson(obj){
+            try{
+                if(typeof obj.name!="string"){
+                    throw new Error("Not valid name");
+                    
+                }
+                
+                if(typeof obj.age!="number"){
+                    throw new Error("Not valid age");
+                    
+                }
+            console.log("Name:",obj.name,",", "age:", obj.age)
+        
+            }
+            catch(error){
+                console.log(error.message)
+            }
+            }
+        let obj={name:"Ram" ,age:55}
+        getPerson(obj)
+        let obj1={name:"rhRam" ,age:"ghjkk"}
+        getPerson(obj1)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class Car{
+            constructor(year,model){
+                this.year=year;
+                this.model=model
+            }
+            getDescription( year,model){
+                console.log(`this is a ${this.year} and model is ${this.model}`)
+            }
+        }
+        const mycar=new Car(2022,"audi")
+        const mycar2=new Car(2024,"farari")
+        const mycar3=new Car(2022,"maruti")
+        mycar.getDescription()
+        mycar2.getDescription()
+        mycar3.getDescription()
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
